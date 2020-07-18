@@ -34,10 +34,10 @@ services:
     container_name: doh-server
     init: true
     environment:
-      - LISTEN_ADDR: "0.0.0.0:3000"
-      - SERVER_ADDR: "9.9.9.9:53"
-      - TIMEOUT: 10
-      - MAX_CLIENTS: 512
+      - LISTEN_ADDR=0.0.0.0:3000
+      - SERVER_ADDR=9.9.9.9:53
+      - TIMEOUT=10
+      - MAX_CLIENTS=512
     restart: unless-stopped
 ```
 
